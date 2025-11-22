@@ -14,20 +14,20 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir un paramètre de configuration PHP.
 
 ```xml
-<php>  <ini name="foo" value="bar"/></php>
+<php><ini name="foo" value="bar"/></php>
 ```
 
 La configuration XML ci-dessus correspond au code PHP suivant :
 
 ```php
 ini_set('foo', 'bar');
-Élément <const>
-Parent: <php>
+Élément `<const>`
+Parent: `<php>`
 ```
 Cet élément peut être utilisé pour définir une constante globale.
 
 ```xml
-<php>  <const name="foo" value="bar"/></php>
+<php><const name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
@@ -40,7 +40,7 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir une variable globale.
 
 ```xml
-<php>  <var name="foo" value="bar"/></php>
+<php><var name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
@@ -53,7 +53,7 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir une valeur dans le tableau super-global $_ENV.
 
 ```xml
-<php>  <env name="foo" value="bar"/></php>
+<php><env name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
@@ -63,7 +63,7 @@ $_ENV['foo'] = 'bar';
 Par défaut, les variables d'environnement ne sont pas écrasées si elles existent déjà. Pour forcer l'écrasement des variables existantes, utilisez l'attribut force :
 
 ```xml
-<php>  <env name="foo" value="bar" force="true"/></php>
+<php><env name="foo" value="bar" force="true"/></php>
 ```
 Élément `<get>`
 Parent: `<php>`
@@ -71,7 +71,7 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir une valeur dans le tableau super-global $_GET.
 
 ```xml
-<php>  <get name="foo" value="bar"/></php>
+<php><get name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
@@ -84,7 +84,7 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir une valeur dans le tableau super-global $_POST.
 
 ```xml
-<php>  <post name="foo" value="bar"/></php>
+<php><post name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
@@ -98,7 +98,7 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir une valeur dans le tableau super-global $_COOKIE.
 
 ```xml
-<php>  <cookie name="foo" value="bar"/></php>
+<php><cookie name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
@@ -111,7 +111,7 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir une valeur dans le tableau super-global $_SERVER.
 
 ```xml
-<php>  <server name="foo" value="bar"/></php>
+<php><server name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
@@ -124,7 +124,7 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir une valeur dans le tableau super-global $_FILES.
 
 ```xml
-<php>  <files name="foo" value="bar"/></php>
+<php><files name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
@@ -137,7 +137,7 @@ Parent: `<php>`
 Cet élément peut être utilisé pour définir une valeur dans le tableau super-global $_REQUEST.
 
 ```xml
-<php>  <request name="foo" value="bar"/></php>
+<php><request name="foo" value="bar"/></php>
 ```
 La configuration XML ci-dessus correspond au code PHP suivant :
 
