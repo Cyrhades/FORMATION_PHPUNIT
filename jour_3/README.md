@@ -7,8 +7,6 @@ Cela inclut la vérification de l'ensemble des étapes métier : contrôle des d
 Nous allons ainsi mettre en place un test fonctionnel **complexe** pour valider tout le système d'inscription, y compris l'envoi d'un email de confirmation. Pour cela, nous utiliserons MailHog afin de vérifier la bonne réception du mail.
 
 ```yml
-version: "3.9"
-
 services:
   mailhog:
     image: mailhog/mailhog:v1.0.1
@@ -18,7 +16,7 @@ services:
       - "8025:8025"
     restart: unless-stopped
 ``` 
-> docker-compose up -d
+> docker compose up -d
 
 
 Dans cet exercice, vous devez mettre en place le formulaire d'inscription ainsi que l’envoi de l’email de confirmation (en environnement de développement via MailHog).
