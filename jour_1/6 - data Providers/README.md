@@ -22,7 +22,7 @@ final class NumericDataSetsTest extends TestCase
             [0, 0, 0],
             [0, 1, 1],
             [1, 0, 1],
-            [1, 1, 3],
+            [1, 1, 2],
         ];
     }
 
@@ -62,7 +62,7 @@ final class ExternalDataProvider
             [0, 0, 0],
             [0, 1, 1],
             [1, 0, 1],
-            [1, 1, 3],
+            [1, 1, 2],
         ];
     }
 }
@@ -102,7 +102,7 @@ final class DataTest extends TestCase
     #[TestWith([0, 0, 0])]
     #[TestWith([0, 1, 1])]
     #[TestWith([1, 0, 1])]
-    #[TestWith([1, 1, 3])]
+    #[TestWith([1, 1, 2])]
     public function testAdd(int $a, int $b, int $expected): void
     {
         $this->assertSame($expected, $a + $b);
