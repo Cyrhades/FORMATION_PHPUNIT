@@ -5,8 +5,6 @@
 Vous allez concevoir un module de gestion d’argent de poche pour adolescents, selon la méthode TDD (Test Driven Development).
 Votre mission : commencer par les tests unitaires, puis développer le code étape par étape jusqu’à ce que tous les tests passent.
 
-Votre objectif : au moins 85 % de couverture de code.
-
 
 
 ## Contexte du projet : MyWeeklyAllowance
@@ -21,6 +19,6 @@ Chaque adolescent a un compte d’argent de poche, et chaque parent peut :
 
 ## Organisation
 - Phase 1 – Rédaction des tests unitaires (RED)
-- Phase 2 – Implémentation du code (GREEN)
-- Phase 3 – Refactoring
+- Phase 2 – Implémentation du code (BLUE)
+- Phase 3 – Refactoring (GREEN)
 - Phase 4 – Vérification de la couverture
