@@ -39,3 +39,16 @@
             <li><a href="./contact">Contact</a></li>
         </ul>
     </nav>
+
+    <?php if (!empty($flashMessages) && is_array($flashMessages)): ?>
+        <div class="flash-messages">
+            <?php foreach ($flashMessages as $type => $messages): ?>
+                <?php foreach ($messages as $message): ?>
+                    <div class="flash-message flash-<?= htmlspecialchars($type) ?>">
+                        <?= htmlspecialchars($message) ?>
+                        <button class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+                    </div>
+                <?php endforeach; ?>
+            <?php endforeach; ?>
+        </div>
+    <?php endif; ?>

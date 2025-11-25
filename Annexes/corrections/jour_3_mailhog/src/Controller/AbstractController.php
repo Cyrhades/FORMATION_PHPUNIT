@@ -2,38 +2,47 @@
 
 namespace App\Controller;
 
+use App\Service\FlashBag;
+
 abstract class AbstractController {
 
     private array $query;
 
     private array $body;
 
+    private FlashBag $flash;
+
     public function __construct() {
         $this->query = $_GET??[];
         $this->body = $_POST??[];
+        $this->flash = new FlashBag();
     }
 
-    public function getQuery(string $name) {
+    protected function getQuery(string $name) {
         return $this->query[$name]??null;
     }
 
-    public function getBody(string $name) {
+    protected function getBody(string $name) {
         return $this->body[$name]??null;
     }
 
+    protected function getFlash() {
+        return $this->flash;
+    }
 
-    public function render(string $template, array $args = []) {
+    protected function render(string $template, array $args = []) {
         $templateFile = dirname(__DIR__,2).'/views/'.$template.'.phtml';
         if(file_exists($templateFile)) {
             extract($args);
+            $flashMessages = $this->getFlash()->getAll();
             include $templateFile;
+            exit();
         } else{
             throw new \Exception("Template  Not Found"); 
         }
     }
 
-
-    public function redirect(string $url) {
+    protected function redirect(string $url) {
         header('location:'.$url);
         exit();
     }

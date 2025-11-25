@@ -1,8 +1,11 @@
 <?php declare(strict_types=1);
+session_start();
 
-require dirname(__DIR__).'/vendor/autoload.php';
+define('ROOT_DIR', dirname(__DIR__));
 
-$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__), '.env');
+require ROOT_DIR.'/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(ROOT_DIR, '.env');
 $dotenv->load();
 
 $router = new App\Service\Router();

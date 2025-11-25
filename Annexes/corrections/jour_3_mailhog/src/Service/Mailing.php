@@ -5,7 +5,7 @@ namespace App\Service;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-class Mailing {
+final class Mailing {
  
     public function sendMail(string $to, string $subject, string $message) {
         $mail = new PHPMailer(true);

@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Service\Mailing;
 
-class ContactController extends AbstractController {
+final class ContactController extends AbstractController {
 
     public function form() {
         $this->render('contact_form');

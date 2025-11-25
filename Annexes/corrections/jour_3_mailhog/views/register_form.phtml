@@ -1,0 +1,25 @@
+<?php include __DIR__.'/header.phtml'; ?>
+
+    <h1>Inscription</h1>
+
+    <?php if(!empty($error)): ?><div class="alert alert-danger"><?= $error; ?></div><?php endif; ?>
+
+    <form action="#" method="post">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" value="<?= htmlspecialchars($nom??''); ?>" required><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" value="<?= htmlspecialchars($prenom??''); ?>" required><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" value="<?= htmlspecialchars($email??''); ?>" required><br><br>
+
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <small>8 caracteres minimum</small>
+        <br><br>
+        
+        <button type="submit">S'inscrire</button>
+    </form>
+
+<?php include __DIR__.'/footer.phtml'; ?>

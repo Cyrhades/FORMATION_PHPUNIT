@@ -4,7 +4,7 @@ namespace App\Service;
 
 use FastRoute;
 
-class Router {
+final class Router {
 
     public function run() {
         $dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
