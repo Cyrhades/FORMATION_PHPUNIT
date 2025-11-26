@@ -14,7 +14,7 @@ La présentation devra aborder :
 ## Travail à réaliser
 ### 1. Installer et utiliser un moteur de couverture
 
-Choisir et configurer l’une des deux extensions compatibles PHPUnit :
+En se basant sur l'exercice précédent "Tests fonctionnels BDD", choisir et configurer l’une des deux extensions compatibles PHPUnit :
 - PCOV
 - Xdebug
 
