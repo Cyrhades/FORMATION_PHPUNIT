@@ -3,7 +3,8 @@
 ## Projet MyWeeklyAllowance
 
 Vous allez concevoir un module de gestion d’argent de poche pour adolescents, selon la méthode TDD (Test Driven Development).
-Votre mission : commencer par les tests unitaires, puis développer le code étape par étape jusqu’à ce que tous les tests passent.
+
+**Votre mission :** commencer par les tests unitaires, puis développer le code étape par étape jusqu’à ce que tous les tests passent.
 
 
 
